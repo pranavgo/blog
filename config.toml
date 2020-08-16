@@ -1,6 +1,6 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
-baseurl                 = "https://erc-bpgc.github.io/blog/"
+baseurl                 = "https://erc-bpgc.github.io/"
 DefaultContentLanguage  = "en"
 title                   = "The ERC Blog"
 theme                   = "hugo-future-imperfect-slim"
@@ -88,7 +88,7 @@ publishDir				= "docs"
   [[menu.main]]
     name              = "Blog"
     identifier        = "blog"
-    url               = "/"
+    url               = "/blog"
     pre               = "<i class='far fa-newspaper'></i>"
     weight            = 1
 
