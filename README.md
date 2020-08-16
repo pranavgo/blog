@@ -1,1 +1,1 @@
-# ERCBlog
+# The ERC Blog
