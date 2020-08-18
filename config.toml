@@ -24,7 +24,7 @@ publishDir				= "docs"
   highlightjs           = true
   highlightjsTheme      = ""
   highlightjsLang       = []
-  viewMorePostsLink     = "../blog/blog"
+  viewMorePostsLink     = "../blog"
   readingTime           = true
   imageStretch          = ""
   removeBlur            = false
@@ -88,7 +88,7 @@ publishDir				= "docs"
   [[menu.main]]
     name              = "Blog"
     identifier        = "blog"
-    url               = "../blog/blog/"
+    url               = "../blog/"
     pre               = "<i class='far fa-newspaper'></i>"
     weight            = 1
 
