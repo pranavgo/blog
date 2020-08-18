@@ -64,7 +64,7 @@ pectora summo.&lt;/p&gt;</description>
       
       <guid>https://erc-bpgc.github.io/blog/blog/emoji-support.fr/</guid>
       <description>Emoji peut être activé dans un projet Hugo de plusieurs manières.
- La fonction [emojify] (https://gohugo.io/functions/emojify/) peut être appelée directement dans les modèles ou [Inline Shortcodes] (https://gohugo.io/templates/shortcode-templates/#inline- codes courts).
+La fonction [emojify] (https://gohugo.io/functions/emojify/) peut être appelée directement dans les modèles ou [Inline Shortcodes] (https://gohugo.io/templates/shortcode-templates/#inline- codes courts).
 Pour activer globalement emoji, définissez enableEmoji sur true dans la [configuration] de votre site (https://gohugo.io/getting-started/configuration/), puis vous pourrez taper des codes abrégés emoji directement dans les fichiers de contenu; par exemple.
  🙈 : see_no_evil: 🙉 : hear_no_evil: : speak_no_evil: Le [aide-mémoire Emoji] (http://www.</description>
     </item>
