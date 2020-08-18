@@ -102,7 +102,7 @@ publishDir				= "docs"
   [[menu.main]]
     name              = "About"
     identifier        = "about"
-    url               = "../blog/about/"
+    url               = "../about/"
     pre               = "<i class='far fa-id-card'></i>"
     weight            = 2
 
