@@ -86,10 +86,10 @@ publishDir				= "docs"
 [menu]
 
   [[menu.main]]
-    name              = "Blog"
-    identifier        = "blog"
-    url               = "../blog/"
-    pre               = "<i class='far fa-newspaper'></i>"
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
     weight            = 1
 
   [[menu.main]]
