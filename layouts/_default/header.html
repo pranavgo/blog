@@ -1,10 +1,10 @@
 <header>
   <div class="title">
     {{ if $.Scratch.Get "h1" }}
-      <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      <h1 style="font-size:1.3em !important;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       {{ $.Scratch.Set "h1" false }}
     {{ else }}
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <h2 style="font-size:1.3em !important;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ end }}
     {{ with .Description }}
       <p>{{ . }}</p>
@@ -14,5 +14,6 @@
     <time datetime="{{ .Date }}">{{ .Render "date" }}</time>
     {{ with .Params.author }}<p>{{ . }}</p>{{ end }}
     {{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
+    {{ .Render "stats" }}
   </div>
 </header>
