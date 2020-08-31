@@ -8,16 +8,6 @@ var toggle = document.getElementById("dark-mode-toggle");
 var darkTheme = document.getElementById("dark-mode-theme");
 var changetext = document.getElementById("togglethis")
 
-function maketheTheme(mode) {
-    if (mode === "dark") {
-        darkTheme.disabled = false;
-        changetext.innerHTML="Light"
-    } else if (mode === "light") {
-        darkTheme.disabled = true;
-        changetext.innerHTML="Dark"
-
-    }
-}
 
 toggle.addEventListener("click", () => {
     if (toggle.checked) {
@@ -32,8 +22,16 @@ toggle.addEventListener("click", () => {
 var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
 maketheTheme(savedTheme);
 
-function setTheme(mode) {
-    localStorage.setItem("dark-mode-storage", mode);
 
-    // same as above
+function maketheTheme(mode) {
+    localStorage.setItem("dark-mode-storage", mode);
+    if (mode === "dark") {
+        darkTheme.disabled = false;
+        changetext.innerHTML="Light"
+    } else if (mode === "light") {
+        darkTheme.disabled = true;
+        changetext.innerHTML="Dark"
+
+    }
 }
+

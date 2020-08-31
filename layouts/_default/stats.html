@@ -1,6 +1,6 @@
 <div class="stats">
   {{ if .Params.categories }}
-    <ul class="categories">
+    <ul class="categories" style="font-size:medium; max-width:100% !important;">
       {{ with .Params.categories }}
         {{ range . }}
           <li><a class="article-terms-link" href="{{ path.Join "categories" (. | urlize | lower) | relLangURL }}/">{{ . }}</a></li>
@@ -9,22 +9,22 @@
     </ul>
   {{ else if .Site.Params.hideEmptyStats }}
   {{ else }}
-    <ul class="categories">
+    <!--<ul class="categories">
       <li>None</li>
-    </ul>
+    </ul>-->
   {{ end }}
   {{ if .Params.tags }}
-    <ul class="tags">
+    <!--<ul class="tags">
       {{ with .Params.tags }}
         {{ range . }}
           <li><a class="article-terms-link" href="{{ path.Join "tags" (. | urlize | lower) | relLangURL }}/">{{ . }}</a></li>
         {{ end }}
       {{ end }}
-    </ul>
+    </ul>-->
   {{ else if .Site.Params.hideEmptyStats }}
   {{ else }}
-    <ul class="tags">
+    <!--<ul class="tags">
       <li>None</li>
-    </ul>
+    </ul>-->
   {{ end }}
 </div>

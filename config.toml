@@ -4,7 +4,7 @@ baseurl                 = "https://erc-bpgc.github.io/blog/"
 DefaultContentLanguage  = "en"
 title                   = "The ERC Blog"
 theme                   = "hugo-future-imperfect-slim"
-paginate                = 10
+paginate                = 8
 disqusShortname         = ""
 googleAnalytics         = "UA-173174352-1"
 pluralizeListTitles     = false
@@ -24,7 +24,7 @@ publishDir				= "docs"
   highlightjs           = true
   highlightjsTheme      = ""
   highlightjsLang       = []
-  viewMorePostsLink     = ""
+  viewMorePostsLink     = "../blog"
   readingTime           = true
   imageStretch          = ""
   removeBlur            = false
@@ -86,23 +86,23 @@ publishDir				= "docs"
 [menu]
 
   [[menu.main]]
-    name              = "Blog"
-    identifier        = "blog"
-    url               = "/blog"
-    pre               = "<i class='far fa-newspaper'></i>"
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
     weight            = 1
 
   [[menu.main]]
     name              = "Categories"
     identifier        = "categories"
-    url               = "/categories/"
+    url               = "../blog/categories/"
     pre               = "<i class='fas fa-sitemap'></i>"
     weight            = 5
 
   [[menu.main]]
     name              = "About"
     identifier        = "about"
-    url               = "/about/"
+    url               = "../blog/about/"
     pre               = "<i class='far fa-id-card'></i>"
     weight            = 2
 
