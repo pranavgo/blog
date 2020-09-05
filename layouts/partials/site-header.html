@@ -5,7 +5,7 @@
 <header id="site-header">
   <nav id="site-nav">
     <h1 class="nav-title">
-      <a href="{{ "/" | relLangURL }}" >>the erc blog <img class="cursorgif" src="{{"img/cursor.gif" | relURL}}">
+      <a href="{{ "/" | relLangURL }}" >> the erc blog <img class="cursorgif" src="{{"img/cursor.gif" | relURL}}">
         <!--{{ if or .IsHome (not .Site.Params.header.dynamicTitles) }}
           {{ .Site.Params.header.navbarTitle  | safeHTML }}
         {{ else }}
@@ -31,7 +31,7 @@
           <input type="checkbox" id="dark-mode-toggle" />
           <div class="slider round"></div>
     </label>
-    <span id="togglethis">Dark</span>
+    <!--<span id="togglethis">Dark</span>-->
   </div>
   
     {{ if .Site.Params.header.searchMenu }}<a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>{{ end }}

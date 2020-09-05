@@ -1,10 +1,10 @@
 <header>
   <div class="title">
     {{ if $.Scratch.Get "h1" }}
-      <h1 style="font-size:1.3em !important;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      <h1 style="font-size:1.5em !important; font-family:Arial, Helvetica, sans-serif !important; text-transform: capitalize!important; letter-spacing:3px !important ;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       {{ $.Scratch.Set "h1" false }}
     {{ else }}
-      <h2 style="font-size:1.3em !important;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <h2 style="font-size:1.5em !important; font-family:Arial, Helvetica, sans-serif !important; text-transform: capitalize !important; letter-spacing:3px !important ;"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ end }}
     {{ with .Description }}
       <p>{{ . }}</p>
