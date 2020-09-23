@@ -6,8 +6,7 @@
 */
 var toggle = document.getElementById("dark-mode-toggle");
 var darkTheme = document.getElementById("dark-mode-theme");
-var changetext = document.getElementById("togglethis")
-
+var changeicon = document.getElementById("theme-icon");
 
 toggle.addEventListener("click", () => {
     if (toggle.checked) {
@@ -27,10 +26,12 @@ function maketheTheme(mode) {
     localStorage.setItem("dark-mode-storage", mode);
     if (mode === "dark") {
         darkTheme.disabled = false;
-        changetext.innerHTML="Light"
+        console.log(changeicon.className);
+        changeicon.className="fas fa-sun";
     } else if (mode === "light") {
         darkTheme.disabled = true;
-        changetext.innerHTML="Dark"
+        console.log(changeicon.className);
+        changeicon.className="fas fa-moon";
 
     }
 }
