@@ -26,11 +26,9 @@ function maketheTheme(mode) {
     localStorage.setItem("dark-mode-storage", mode);
     if (mode === "dark") {
         darkTheme.disabled = false;
-        console.log(changeicon.className);
         changeicon.className="fas fa-sun";
     } else if (mode === "light") {
         darkTheme.disabled = true;
-        console.log(changeicon.className);
         changeicon.className="fas fa-moon";
 
     }
